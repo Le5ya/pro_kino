@@ -284,7 +284,7 @@ color: #ff3d00;
   align-self: end;
 }
 @media (max-width: 1024px) {
-  .about__container {
+  .about__container:after {
     flex-basis: 436px;
     background-image: url('../img/aang1024.jpg');
   }
