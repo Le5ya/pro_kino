@@ -5,8 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+	<link rel="preload" href="fonts/inter-v13-cyrillic_latin-600.woff2" as="font" crossorigin>
+	<link rel="preload" href="fonts/inter-v13-cyrillic_latin-regular.woff2" as="font" crossorigin>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/index.css">
+	<script src="script/index.js" defer></script>
 	<title>Про КИНО - Аватар: Легенда об Аанге</title>
 </head>
 
@@ -64,14 +67,17 @@
 		<section class="trailers" id="trailers">
 			<div class="container trailers__container">
 				<ul class="trailers__buttons">
-					<li class="trailers__button trailers__button_active" aria-label="Трейлер">
-						<button class="trailers__button">трейлер 1</button>
+					<li class="trailers__item-button">
+						<button class="trailers__button trailers__button_active" aria-label="Трейлер"
+							data-src="https://www.youtube.com/embed/ByAn8DF8Ykk">трейлер 1</button>
 					</li>
-					<li class="trailers__button" aria-label="Тизер">
-						<button class="trailers__button">трейлер 2</button>
+					<li class="trailers__item-button" aria-label="Тизер">
+						<button class="trailers__button" aria-label="Тизер" data-src="https://www.youtube.com/embed/waJKJW_XU90">трейлер
+							2</button>
 					</li>
-					<li class="trailers__button" aria-label="Бэкстейдж">
-						<button class="trailers__button">трейлер 3</button>
+					<li class="trailers__item-button">
+						<button class="trailers__button" aria-label="Бэкстейдж" data-src="https://www.youtube.com/embed/Cw12Dat8bkE">трейлер
+							3</button>
 					</li>
 				</ul>
 				<ul class="trailers__list">

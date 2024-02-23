@@ -5,13 +5,13 @@
 	font-family: 'Inter';
 	font-weight: 400;
 	src: url('../fonts/inter-v13-cyrillic_latin-regular.woff2') format('woff2');
-	font: swap;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Inter';
 	font-weight: 600;
 	src: url('../fonts/inter-v13-cyrillic_latin-600.woff2') format('woff2');
-	font: swap;
+	font-display: swap;
 }
 
 html {
@@ -265,6 +265,7 @@ margin-bottom: 16px;
 
 }
 .trailers__wrapper {
+  display: none;
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -414,6 +415,22 @@ margin-bottom: 16px;
     font-size: 12px;
     padding: 10px 16px;
   }
+  .footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .footer__container {
+    gap: 20px;
+  }
+  .footer__developers {
+    font-size: 16px;
+  }
+  .footer__copyright {
+    font-size: 12px;
+  }
+  .footer__logo {
+    width: 217px; 
+  }
 }
 @media (max-width: 620px) {
   .container {
@@ -483,6 +500,17 @@ margin-bottom: 16px;
   .trailers__list {
     padding: 0 16px;
   }
+  .footer__container {
+    grid-template-areas:
+      "logo"
+      "developers "
+      "copyright";
+}
+  .footer__logo {
+    margin-bottom: 4px;
+    justify-self: start;
+  }
+
 }
 
 
